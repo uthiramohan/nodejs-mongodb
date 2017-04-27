@@ -1,4 +1,4 @@
-FROM node:6-alpine
+FROM node:6.10.1
 ADD package.json /tmp/package.json
 RUN cd /tmp && npm install
 RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
